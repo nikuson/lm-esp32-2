@@ -1,6 +1,0 @@
-# the whole engine runs from IRAM: while weights stream through the flash cache,
-# code fetches must not compete for the same bus
-[mapping:llm3]
-archive: libmain.a
-entries:
-    llm3 (noflash)
